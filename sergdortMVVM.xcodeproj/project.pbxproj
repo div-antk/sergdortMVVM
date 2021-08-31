@@ -13,9 +13,11 @@
 		3B5B518326DE4BD30024BFDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5B518126DE4BD30024BFDA /* Main.storyboard */; };
 		3B5B518526DE4BD60024BFDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5B518426DE4BD60024BFDA /* Assets.xcassets */; };
 		3B5B518826DE4BD60024BFDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5B518626DE4BD60024BFDA /* LaunchScreen.storyboard */; };
+		64084D1648B181505E93EA22 /* Pods_sergdortMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9146CEA8E17FA11D52095920 /* Pods_sergdortMVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04EC497EF802E94B0724764F /* Pods-sergdortMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sergdortMVVM.debug.xcconfig"; path = "Target Support Files/Pods-sergdortMVVM/Pods-sergdortMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		3B5B517826DE4BD30024BFDA /* sergdortMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sergdortMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5B517B26DE4BD30024BFDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B5B517D26DE4BD30024BFDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		3B5B518426DE4BD60024BFDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B5B518726DE4BD60024BFDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B5B518926DE4BD60024BFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F83F2583C24831B214E81F6 /* Pods-sergdortMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sergdortMVVM.release.xcconfig"; path = "Target Support Files/Pods-sergdortMVVM/Pods-sergdortMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		9146CEA8E17FA11D52095920 /* Pods_sergdortMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sergdortMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64084D1648B181505E93EA22 /* Pods_sergdortMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31845DCBF58A2B79BA1FC8DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04EC497EF802E94B0724764F /* Pods-sergdortMVVM.debug.xcconfig */,
+				8F83F2583C24831B214E81F6 /* Pods-sergdortMVVM.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3B5B516F26DE4BD30024BFDA = {
 			isa = PBXGroup;
 			children = (
 				3B5B517A26DE4BD30024BFDA /* sergdortMVVM */,
 				3B5B517926DE4BD30024BFDA /* Products */,
+				31845DCBF58A2B79BA1FC8DB /* Pods */,
+				C84573B9F83FB18BE7D19BA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = sergdortMVVM;
 			sourceTree = "<group>";
 		};
+		C84573B9F83FB18BE7D19BA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9146CEA8E17FA11D52095920 /* Pods_sergdortMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B5B518C26DE4BD60024BFDA /* Build configuration list for PBXNativeTarget "sergdortMVVM" */;
 			buildPhases = (
+				8A1E60F2717453852E0D59BD /* [CP] Check Pods Manifest.lock */,
 				3B5B517426DE4BD30024BFDA /* Sources */,
 				3B5B517526DE4BD30024BFDA /* Frameworks */,
 				3B5B517626DE4BD30024BFDA /* Resources */,
+				21D2CFBD4F43EE6DA1B759BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21D2CFBD4F43EE6DA1B759BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sergdortMVVM/Pods-sergdortMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sergdortMVVM/Pods-sergdortMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sergdortMVVM/Pods-sergdortMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A1E60F2717453852E0D59BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sergdortMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B5B517426DE4BD30024BFDA /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		3B5B518D26DE4BD60024BFDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04EC497EF802E94B0724764F /* Pods-sergdortMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		3B5B518E26DE4BD60024BFDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F83F2583C24831B214E81F6 /* Pods-sergdortMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
