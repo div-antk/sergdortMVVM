@@ -1,0 +1,6 @@
+framework module Pods_sergdortMVVM {
+  umbrella header "Pods-sergdortMVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}
