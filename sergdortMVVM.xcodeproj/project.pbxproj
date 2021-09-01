@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		3B5B518326DE4BD30024BFDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5B518126DE4BD30024BFDA /* Main.storyboard */; };
 		3B5B518526DE4BD60024BFDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5B518426DE4BD60024BFDA /* Assets.xcassets */; };
 		3B5B518826DE4BD60024BFDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5B518626DE4BD60024BFDA /* LaunchScreen.storyboard */; };
+		3B5B51AD26DE569A0024BFDA /* WikipediaSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5B51AC26DE569A0024BFDA /* WikipediaSearchViewModel.swift */; };
+		3B5B51B026DE57D60024BFDA /* RxViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5B51AF26DE57D60024BFDA /* RxViewModelType.swift */; };
+		3B5B51B626DFB7510024BFDA /* WikipediaAPI .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5B51B526DFB7510024BFDA /* WikipediaAPI .swift */; };
+		3B5B51B926DFB7990024BFDA /* WikipediaPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5B51B826DFB7990024BFDA /* WikipediaPage.swift */; };
 		64084D1648B181505E93EA22 /* Pods_sergdortMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9146CEA8E17FA11D52095920 /* Pods_sergdortMVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,10 @@
 		3B5B518426DE4BD60024BFDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B5B518726DE4BD60024BFDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B5B518926DE4BD60024BFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B5B51AC26DE569A0024BFDA /* WikipediaSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaSearchViewModel.swift; sourceTree = "<group>"; };
+		3B5B51AF26DE57D60024BFDA /* RxViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewModelType.swift; sourceTree = "<group>"; };
+		3B5B51B526DFB7510024BFDA /* WikipediaAPI .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WikipediaAPI .swift"; sourceTree = "<group>"; };
+		3B5B51B826DFB7990024BFDA /* WikipediaPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaPage.swift; sourceTree = "<group>"; };
 		8F83F2583C24831B214E81F6 /* Pods-sergdortMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sergdortMVVM.release.xcconfig"; path = "Target Support Files/Pods-sergdortMVVM/Pods-sergdortMVVM.release.xcconfig"; sourceTree = "<group>"; };
 		9146CEA8E17FA11D52095920 /* Pods_sergdortMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sergdortMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -48,7 +56,6 @@
 				04EC497EF802E94B0724764F /* Pods-sergdortMVVM.debug.xcconfig */,
 				8F83F2583C24831B214E81F6 /* Pods-sergdortMVVM.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,12 +83,24 @@
 				3B5B517B26DE4BD30024BFDA /* AppDelegate.swift */,
 				3B5B517D26DE4BD30024BFDA /* SceneDelegate.swift */,
 				3B5B517F26DE4BD30024BFDA /* ViewController.swift */,
+				3B5B51B526DFB7510024BFDA /* WikipediaAPI .swift */,
+				3B5B51B826DFB7990024BFDA /* WikipediaPage.swift */,
+				3B5B51B226DE57E30024BFDA /* ViewModel */,
 				3B5B518126DE4BD30024BFDA /* Main.storyboard */,
 				3B5B518426DE4BD60024BFDA /* Assets.xcassets */,
 				3B5B518626DE4BD60024BFDA /* LaunchScreen.storyboard */,
 				3B5B518926DE4BD60024BFDA /* Info.plist */,
 			);
 			path = sergdortMVVM;
+			sourceTree = "<group>";
+		};
+		3B5B51B226DE57E30024BFDA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B5B51AF26DE57D60024BFDA /* RxViewModelType.swift */,
+				3B5B51AC26DE569A0024BFDA /* WikipediaSearchViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C84573B9F83FB18BE7D19BA1 /* Frameworks */ = {
@@ -207,7 +226,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B5B518026DE4BD30024BFDA /* ViewController.swift in Sources */,
+				3B5B51B626DFB7510024BFDA /* WikipediaAPI .swift in Sources */,
 				3B5B517C26DE4BD30024BFDA /* AppDelegate.swift in Sources */,
+				3B5B51AD26DE569A0024BFDA /* WikipediaSearchViewModel.swift in Sources */,
+				3B5B51B026DE57D60024BFDA /* RxViewModelType.swift in Sources */,
+				3B5B51B926DFB7990024BFDA /* WikipediaPage.swift in Sources */,
 				3B5B517E26DE4BD30024BFDA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

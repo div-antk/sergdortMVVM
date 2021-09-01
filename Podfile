@@ -6,6 +6,7 @@ target 'sergdortMVVM' do
   use_frameworks!
 
   # Pods for sergdortMVVM
+  pod 'Moya'
   pod 'RxSwift'
   pod 'RxCocoa'
 
